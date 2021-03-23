@@ -1,26 +1,27 @@
 {
-  "title": "Test Scenario",
-  "description": "I don't want to write this",
-  "difficulty": "Beginner",
-  "time": "2 minutes",
+  "noindex": true,
+  "title": "Connect to cluster with the SQL shell",
+  "description": "Connect the built-in SQL shell to a running cluster",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "foreground": "foreground.sh"
       }
-    ],
-    "intro": {
-      "text": "intro.md"
-    },
-    "finish": {
-      "text": "finish.md"
-    }
+    ]
   },
   "environment": {
+    "hideintro": true,
+    "hidefinish": true,
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "DB Console",
+        "port": 8080
+      }
+    ],
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu:2004"
+    "imageid": "ubuntu:1804"
   }
-}
