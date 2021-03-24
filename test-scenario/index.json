@@ -6,7 +6,7 @@
     "steps": [
       {
         "text": "step1.md",
-        "background": "background.sh"
+        "code": "background.sh"
       }
     ]
   },
